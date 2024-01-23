@@ -1,0 +1,68 @@
+@import "../../../_color-variables";
+
+.form-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  background: $bg-secondary;
+  color: white;
+
+  padding: 4.5rem 7.5rem;
+
+  gap: 7rem;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+  }
+
+  p{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .text{
+    flex: 1;
+
+  }
+  form{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    input {
+      background: none;
+      border: none;;
+      border-bottom: 1px solid white;
+      width: 100%;
+      margin-bottom: 2.5rem;
+
+      height: 4rem;
+
+      outline: none;
+
+      color: white;
+
+      &:focus{
+        border: 1px solid $light-primary;
+        border-top: none;
+        border-radius: 0.25rem;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .form-section{
+    flex-direction: column;
+    padding: 2.5rem 4.5rem;
+  }
+}
