@@ -1,27 +1,52 @@
-# NgLandingPage
+# Angular 17 Landing Page
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+Welcome to the Angular 17 Landing Page project, designed to showcase the latest features of Angular 17, including the new control flow, signals, standalone components, and services.
 
-## Development server
+## Project Structure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **home.component.ts**: This file contains the implementation of the `HomeComponent`, the main component responsible for displaying the landing page content. The `HomeComponent` is an Angular 17 component that utilizes the latest features, such as the new control flow, to enhance user interactions.
 
-## Code scaffolding
+- **newsletter-form.component.ts**: The `NewsletterFormComponent` is an Angular component that demonstrates the use of standalone components and services. It utilizes signals for asynchronous operations and a service (`NewsletterService`) for communication with an AWS API.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **newsletter.service.ts**: The `NewsletterService` is an Angular service responsible for sending newsletter subscription data to an AWS API using HTTP requests.
 
-## Build
+## Project Running
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Angular 17 Landing Page](src/assets/README/landing-page.png)
 
-## Running unit tests
+## How to Use
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository to your local machine.
+2. Open the project in your preferred Angular 17 development environment.
+3. Explore and modify the code to understand the implementation of new features.
+4. Run the application using the Angular CLI command: `ng serve`.
+5. Open your browser and navigate to `http://localhost:4200/` to experience the Angular 17 landing page.
 
-## Running end-to-end tests
+## Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+1. **Install Angular CLI**: If you haven't installed the Angular CLI, you can do so by running the following command in your terminal:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+     npm install -g @angular/cli
+    ```
+
+2. **Install Dependencies**: Navigate to the project directory and install the project dependencies:
+
+    ```bash
+      npm install
+    ```
+
+3. **Run the Application**: Use the Angular CLI to run the application locally:
+
+    ```bash
+      ng serve
+    ```
+
+4. **Explore and Learn**: Review the code in each file to understand how Angular 17 features are implemented, including the new control flow, signals, standalone components, and services.
+
+## Additional Notes
+
+- Ensure that your AWS API is properly configured for the newsletter service to work.
+
+- Feel free to experiment with the code, make changes, and enhance the functionality as part of your exploration of Angular 17 features
